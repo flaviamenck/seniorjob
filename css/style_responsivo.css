@@ -1,0 +1,484 @@
+/* MENU */
+
+@media only screen and (max-width: 720px) {
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background: rgb(29, 72, 112);
+        height: 8vh;
+    }
+    .nav-list {
+        list-style: none;
+        display: none;
+        z-index: 1;
+    }
+    
+    .nav-list li {
+        letter-spacing: 3px;
+        margin-left: 32px;
+    }    
+
+    .mobile-menu {
+        display: none;
+        cursor: pointer;
+    }
+    
+    .mobile-menu div {
+        width: 32px;
+        height: 2px;
+        background: #fff;
+        margin: 8px;
+        transition: 0.3s;
+    }    
+
+    /* RODAPÉ */
+
+    .rodape{
+        font-size: 18px;    
+        text-align: center;
+        color: white;
+        bottom: 0;
+        right: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        background-color: rgb(29, 72, 112);
+        padding: 10px;
+    }
+
+}
+
+@media (max-width: 999px) {
+    body {
+        overflow-x: hidden;
+    
+    }
+    .nav-list {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 30%;
+        height:100%;
+        background: rgb(29, 72, 112);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in;
+    }
+
+
+    .nav-list li {
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu {
+        display: block;
+    }
+
+    .nav-list.active {
+    transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.mobile-menu-active .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu-active .line2 {
+    opacity: 0;
+}
+
+.mobile-menu-active .line3 {
+    transform: rotate(45deg) translate(-5px, -7px);
+}
+
+/* PÁGINA INICIAL */
+
+.title-inicio {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+    width: 50%;
+    padding: 20%;
+}
+
+.pagina-inicial {
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #fff; 
+    text-shadow: black 0.1em 0.1em 0.2em;
+    padding: 20px;
+}
+
+/* SERVIÇOS */
+
+.img-serv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.img-serviços {
+    height: 250px;
+    width: 350px;
+}
+
+.element-serv {
+    padding: 20px;
+}
+
+.bot-serv {
+    width: 350px;
+}
+
+/* CONTATE-NOS */
+
+.img-contact {
+    display: none;
+}
+
+/* SOBRE NÓS */
+
+.img-sobre {
+    display: none;
+}
+
+
+/* TÍTULOS */
+
+.titulos {
+    font-size: 24px;
+}
+
+/* RODAPÉ */
+
+.rodape{
+    font-size: 15px;    
+    text-align: center;
+    padding: 10px;
+}
+
+.img-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    width: 50px;
+    /* height: 50px; */
+    padding: 10px;
+}
+
+.div-rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons-contato {
+    padding: 5px;
+}
+
+.contato-local{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+/* CURRICULOS */
+
+.img-curriculo {
+    display: none;
+}
+
+}
+
+@media (max-width: 719px) {
+    h4 {
+        padding-bottom: 15px;
+        text-align: center;
+    }
+    
+    /* SOBRE NÓS */
+
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img-sobre {
+        display: none;
+    }
+    
+    .text-sobre {
+        text-align: justify;
+        font-size: 18px;
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+    
+    p {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    /* RODAPÉ */
+
+    .rodape{
+        font-size: 15px;    
+        text-align: center;
+        padding: 10px;
+    }
+
+    .img-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .icon {
+        width: 50px;
+        /* height: 50px; */
+        padding: 10px;
+    }
+
+    .div-rodape {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icons-contato {
+        padding: 5px;
+    }
+
+    .contato-local {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    /* TÍTULOS */
+
+    .titulos {
+        font-size: 20px;
+    }
+
+    /* SERVIÇOS */
+
+    .img-serv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+    }
+
+    .img-serviços {
+        height: 170px;
+        width: 280px;
+    }
+
+    .element-serv {
+        padding: 20px;
+    }
+
+    .bot-serv {
+        width: 280px;
+    }
+
+    /* CABEÇALHO */
+
+    .logo {
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+
+    .nav-list {
+        list-style: none;
+        display: flex;
+        height: 100%;
+    }
+    
+    .nav-list li {
+        letter-spacing: 2px;
+        margin-left: 5px;
+    }
+
+    .nav-list a {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 540px) {
+
+    /* PÁGINA INICIAL */
+
+    .title-inicio {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        height: 100%;
+        width: 30%;
+        padding: 20%;
+    }
+
+    .pagina-inicial {
+        position: absolute;
+        top: 60%;
+        font-size: 35px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        color: #fff; 
+        text-shadow: black 0.1em 0.1em 0.2em;
+        padding: 20px;
+    }
+
+    /* RODAPÉ */
+
+    .rodape{
+        font-size: 15px;    
+        text-align: center;
+        padding: 10px;
+    }
+
+    .img-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .icon {
+        width: 50px;
+        /* height: 50px; */
+        padding: 10px;
+    }
+
+    .div-rodape {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .icons-contato {
+        padding: 5px;
+    }
+
+    .contato-local{
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    /* CABEÇALHO */
+
+    .logo {
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+
+    .nav-list {
+        list-style: none;
+        display: flex;
+        height: 100%;
+    }
+    
+    .nav-list li {
+        letter-spacing: 2px;
+        margin-left: 5px;
+    }
+
+    .nav-list a {
+        font-size: 15px;
+    }
+
+    .menu {
+        font-size: 15px;
+    }
+
+    /* SERVIÇOS */
+
+    .img-serv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding: 20px;
+    }
+
+    .img-serviços {
+        height: 220px;
+        width: 280px;
+    }
+
+    .element-serv {
+        padding: 20px;
+    }
+
+    /* TÍTULOS */
+
+    .titulos {
+        font-size: 20px;
+        width: 95%;
+    }
+
+    /* CONTATO */
+
+    .img-contact {
+        display: none;
+    }
+
+    textarea {
+        width: 320px;
+    }
+
+    /* CONTATO E CURRÍCULOS */
+
+    .conteudo {
+        height: auto;
+        width: 100%;
+    }
+
+    /* CURRÍCULOS */
+
+    .img-curriculo {
+        display: none;
+    }
+
+    .p-curriculos {
+        font-size: 15px;
+    }
+
+    /* VAGAS */
+
+    .p-vagas {
+        font-size: 15px;
+    }
+
+    .img-vaga {
+        height: 250px;
+        width: 280px;
+    }
+}

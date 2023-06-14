@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Senior Job - Página de currículos">
+    <title>Senior Job</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style_responsivo.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a class="logo" href="./index.html">Sênior Job</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="./index.html">Início</a></li>
+                <li><a href="./servicos.html">Serviços</a></li>
+                <li><a href="./sobre-nos.html">Sobre</a></li>
+                <li><a href="./entrar.html">Entrar</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container">
+
+        <h1 class="titulos">CADASTRE SEU CURRÍCULO</h1>
+
+        <p class="p-curriculos">Procurando um emprego? Nos envie seu cúrriculo e entraremos em contato assim que acharmos a vaga perfeita pra você!</p>
+
+        <section class="conteudo">
+            <div class="img-curriculo">
+                <img src="./image/img-curriculo.svg" alt="imagem-curriculo">
+            </div>
+            <div class="input-group">
+                <div class="input-box">
+                    <label for="name">Nome completo</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="endereço">Endereço</label>
+                    <input type="text" id="endereço" name="endereço" placeholder="Digite seu endereço" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="number">Celular</label>
+                    <input type="tel" id="celular" name="celular" placeholder="(xx) xxxxx-xxxx" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="number">Data de nascimento</label>
+                    <input type="date" id="data" name="data" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="name">Experiências</label>
+                    <textarea type="message" id="message" name="message" placeholder="Deixe aqui as suas experiências profissionais" required></textarea>
+                </div>
+
+                <div class="genero-inputs">
+                    <div class="genero-title">
+                        <h6>Gênero</h6>
+                    </div>
+
+                    <div class="genero-group">
+                        <div class="genero-input">
+                            <input type="radio" id="female" name="gender">
+                            <label for="female">Feminino</label>
+                        </div>
+
+                        <div class="genero-input">
+                            <input type="radio" id="male" name="gender">
+                            <label for="male">Masculino</label>
+                        </div>
+
+                        <div class="genero-input">
+                            <input type="radio" id="others" name="gender">
+                            <label for="others">Outros</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-curriculo">
+                <button class="enviar"><a>Enviar</a></button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+
+        <div class="div-rodape">
+
+            <div class="div-dev-logo">
+                <img class="img_logo" src="./image/sj-logo2.png" alt="Logo">
+                <p>Senior Job - Projeto integrador 2023.</p>
+                <p>Desenvolvido por: Flávia Menck.</p>
+                <div class="img-icons">
+                    <a href="https://www.facebook.com/flavia.menck" target="_blank"><img src="./image/img-facebook.svg"
+                            alt="Facebook" class="icon"></a>
+                    <a href="https://www.instagram.com/menckf_/" target="_blank"><img src="./image/img-instagram.svg"
+                            alt="Instagram" class="icon"></a>
+                    <a href="https://www.linkedin.com/in/fl%C3%A1via-menck-198443249/" target="_blank"><img
+                            src="./image/img-linkedin.svg" alt="Linkedin" class="icon"></a>
+                    <a href="https://github.com/flaviamenck?tab=repositories" target="_blank"><img
+                            src="./image/img-github.svg" alt="Github" class="icon"></a>
+                </div>
+
+            </div>
+            <div class="contato-local">
+                <div class="icons-contato">
+                    <img src="./image/location.svg" alt="localização" class="img-contatos">
+                    <p class="p-contatos">Avenida Qualquer, 1025 - Centro - Cornélio Procópio / PR.</p>
+                </div>
+                <div class="icons-contato">
+                    <img src="./image/phone.svg" alt="telefone" class="img-contatos">
+                    <p class="p-contatos">(43) 3333-5555</p>
+                </div>
+                <div class="icons-contato">
+                    <img src="./image/email.svg" alt="email" class="img-contatos">
+                    <p class="p-contatos">contato@seniorjob.com</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/mobile-navbar.js"></script>
+</body>
+
+</html>
