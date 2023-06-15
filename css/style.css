@@ -39,16 +39,15 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    height: 100%;
-    width: 40%;
-    padding: 20%;
+    height: 80px;
+    width: 350px;
 }
 
 .pagina-inicial {
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 2%;
-    width: 30%;
+    width: 80%;
     font-size: 60px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #fff; 
